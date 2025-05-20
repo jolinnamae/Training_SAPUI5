@@ -12,13 +12,13 @@ sap.ui.define([
     onClearPress() {
       const oView = this.getView();
 
-      oView.byId("input0")?.setValue("");
-      oView.byId("input2")?.setValue("");
-      oView.byId("input3")?.setValue("");
-      oView.byId("input4")?.setValue("");
-      oView.byId("input5")?.setValue("");
-      oView.byId("select0")?.setSelectedKey(null);
-
+      oView.byId("InputName")?.setValue("");
+      oView.byId("InputStreetNo1")?.setValue("");
+      oView.byId("InputStreetNo2")?.setValue("");
+      oView.byId("InputZip1")?.setValue("");
+      oView.byId("InputZip2")?.setValue("");
+      
+      oView.byId("ComboBoxCountry")?.setSelectedKey("");
     }
 
   });
