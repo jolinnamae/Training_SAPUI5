@@ -1,30 +1,46 @@
-<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.acn.training.project1.controller.App" displayBlock="true" busyIndicatorSize="Large">
-<Label text="BASIC SAPUI5 Bootcamp Exercise No. 1 – SAPUI5 Application " width="100%" id="label0" vAlign="Bottom" design="Bold" textAlign="Center" wrappingType="Hyphenated"/>
-<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:sap.ui.core="sap.ui.core" xmlns:sap.ui.layout.form="sap.ui.layout.form" controllerName="com.acn.training.project1.controller.App" displayBlock="true" busyIndicatorSize="Large">
+
+  <Label text="BASIC SAPUI5 Bootcamp Exercise No. 1 – SAPUI5 Application" width="100%" design="Bold" textAlign="Center" wrappingType="Hyphenated" id="LabelTitle"/>
+
+  <sap.ui.layout.form:SimpleForm editable="true" layout="ResponsiveGridLayout" id="form0">
+
     <sap.ui.layout.form:content>
-        <Label text="Name" id="label1"/>
-        <Input width="100%" id="input0"/>
-        <Label text="Street/No" id="label2"/>
-        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input2"/>
-        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input3"/>
-        <Label xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Zip Code/City" id="label3"/>
-        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input4"/>
-        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input5"/>
-        <Label xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Country" id="label4"/>
-        <Select id="select0" selectedKey=" ">
-            <items>
-                <sap.ui.core:ListItem text="England" id="item0"/>
-                <sap.ui.core:ListItem text="Germany" id="item1"/>
-                <sap.ui.core:ListItem text="USA" id="item4"/>
-                <sap.ui.core:ListItem text="Philippines" id="item3"/>
-            </items>
-        </Select></sap.ui.layout.form:content>
-</sap.ui.layout.form:SimpleForm>
-<HBox xmlns="sap.m" justifyContent="End" id="hbox1">
- 
-  <Button text="Save" icon="sap-icon://save" type="Accept" press="onSavePress" id="button1"/>
-  <Button text="Clear" icon="sap-icon://delete" press="onClearPress" type="Reject" id="button2"/>
- 
-</HBox>
+
+      <Label text="Name" id="LabelName"/>
+      <Input width="100%" id="InputName"/>
+
+      <Label text="Street/No" id="LabelStreetNo"/>
+      <Input width="100%" id="InputStreetNo1"/>
+      <Input width="100%" id="InputStreetNo2"/>
+
+      <Label text="Zip Code/City" id="LabelZip"/>
+      <Input width="100%" id="InputZip1"/>
+      <Input width="100%" id="InputZip2"/>
+
+      <Label text="Country" id="LabelCountry"/>
+
+      <ComboBox xmlns="sap.m" id="ComboBoxCountry">
+
+      <items>
+
+          <core:Item xmlns:core="sap.ui.core" key="item-1-key" text="England" id="ItemEngland"/>
+
+          <core:Item xmlns:core="sap.ui.core" key="item-2-key" text="Germany" id="ItemGermany"/>
+
+          <sap.ui.core:Item text="USA" id="ItemUSA"/>
+
+          <sap.ui.core:Item text="Philippines" id="ItemPhilippines"/>
+
+          </items>
+
+  </ComboBox>
+
+    </sap.ui.layout.form:content>
+  </sap.ui.layout.form:SimpleForm>
+
+  <HBox justifyContent="End" id="BoxButtonSaveClear">
+    <Button text="Save" icon="sap-icon://save" type="Accept" press="onSavePress" id="ButtonSave"/>
+    <Button text="Clear" icon="sap-icon://delete" press="onClearPress" type="Reject" id="ButtonClear"/>
+  </HBox>
 
 </mvc:View>
