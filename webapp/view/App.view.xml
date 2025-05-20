@@ -1,0 +1,30 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="com.acn.training.project1.controller.App" displayBlock="true" busyIndicatorSize="Large">
+<Label text="BASIC SAPUI5 Bootcamp Exercise No. 1 – SAPUI5 Application " width="100%" id="label0" vAlign="Bottom" design="Bold" textAlign="Center" wrappingType="Hyphenated"/>
+<sap.ui.layout.form:SimpleForm xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" editable="true" layout="ResponsiveGridLayout" id="form0">
+    <sap.ui.layout.form:content>
+        <Label text="Name" id="label1"/>
+        <Input width="100%" id="input0"/>
+        <Label text="Street/No" id="label2"/>
+        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input2"/>
+        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input3"/>
+        <Label xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Zip Code/City" id="label3"/>
+        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input4"/>
+        <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input5"/>
+        <Label xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Country" id="label4"/>
+        <ActionSelect id="select0" selectedKey=" ">
+            <items>
+                <sap.ui.core:ListItem text="England" id="item0"/>
+                <sap.ui.core:ListItem text="Germany" id="item1"/>
+                <sap.ui.core:ListItem text="USA" id="item4"/>
+                <sap.ui.core:ListItem text="Philippines" id="item3"/>
+            </items>
+        </ActionSelect></sap.ui.layout.form:content>
+</sap.ui.layout.form:SimpleForm>
+<HBox xmlns="sap.m" justifyContent="End">
+ 
+  <Button text="Save" icon="sap-icon://save" type="Accept" press="onSavePress"/>
+  <Button text="Clear" icon="sap-icon://delete" press="onClearPress" type="Reject"/>
+ 
+</HBox>
+
+</mvc:View>
