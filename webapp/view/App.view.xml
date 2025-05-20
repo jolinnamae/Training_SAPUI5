@@ -11,19 +11,19 @@
         <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input4"/>
         <Input xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" width="100%" id="input5"/>
         <Label xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" xmlns:sap.ui.core="sap.ui.core" xmlns="sap.m" text="Country" id="label4"/>
-        <ActionSelect id="select0" selectedKey=" ">
+        <Select id="select0" selectedKey=" ">
             <items>
                 <sap.ui.core:ListItem text="England" id="item0"/>
                 <sap.ui.core:ListItem text="Germany" id="item1"/>
                 <sap.ui.core:ListItem text="USA" id="item4"/>
                 <sap.ui.core:ListItem text="Philippines" id="item3"/>
             </items>
-        </ActionSelect></sap.ui.layout.form:content>
+        </Select></sap.ui.layout.form:content>
 </sap.ui.layout.form:SimpleForm>
-<HBox xmlns="sap.m" justifyContent="End">
+<HBox xmlns="sap.m" justifyContent="End" id="hbox1">
  
-  <Button text="Save" icon="sap-icon://save" type="Accept" press="onSavePress"/>
-  <Button text="Clear" icon="sap-icon://delete" press="onClearPress" type="Reject"/>
+  <Button text="Save" icon="sap-icon://save" type="Accept" press="onSavePress" id="button1"/>
+  <Button text="Clear" icon="sap-icon://delete" press="onClearPress" type="Reject" id="button2"/>
  
 </HBox>
 
